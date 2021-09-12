@@ -1,4 +1,12 @@
-export const RepositoryItem = ({ repository }) => {
+interface RepositoryItemProps {
+  repository: {
+    name: string;
+    description: string;
+    html_url: string;
+  };
+}
+
+export const RepositoryItem = ({ repository }: RepositoryItemProps) => {
   const { name, description, html_url } = repository;
   return (
     <li>
