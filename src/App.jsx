@@ -1,2 +1,7 @@
 import React from "react";
-export const App = () => <h1>Hello ReactJS</h1>;
+import { RepositoryList } from "./components/RepositoryList";
+export const App = () => (
+  <>
+    <RepositoryList />
+  </>
+);
